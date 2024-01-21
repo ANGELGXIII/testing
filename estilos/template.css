@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+body{
+    background-color: black;
+    color: aqua;
+    
+}
+h1{
+
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25pt;
+    font-style: oblique;
+    border-style: double;
+    text-align: center;
+}
+#navegatorLetter{
+    color: azure;
+    font-size: 15pt;
+    font-family: 'DM Sans', sans-serif;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(57, 138, 95);
+    opacity: 0.5;
+}
+#descripcionTexto{
+    color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+}
+#cabezeraPrincipal{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14pt;
+    background-color: rgb(29, 173, 125);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+#logoimg{
+    cursor: pointer;
+}
+
+#logoimg img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+#logoimg img:hover{
+    transform: scale(1.2);
+}
+#nav-header{
+    list-style: none;
+}
+#nav-header li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#nav-header li:hover{
+    transform: scale(1.1);
+}
+#nav-header li a:hover{
+    color: rgb(205, 41, 41);
+}
+
+#nav-header a{
+    font-size: 700;
+    color: azure;
+    text-decoration: none;
+}
+
