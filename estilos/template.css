@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(155, 206, 206);
+    font-size: 14pt;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
 body{
-    background-color: black;
+    background-color: rgb(80, 112, 137);
     color: aqua;
     
 }
@@ -26,6 +38,7 @@ h3{
     text-align: center;
     background-color: rgb(57, 138, 95);
     opacity: 0.5;
+    
 }
 #descripcionTexto{
     color: cadetblue;
@@ -57,17 +70,20 @@ h3{
 }
 #nav-header{
     list-style: none;
+    position: relative;
+    z-index: 1000;
 }
 #nav-header li{
     display: inline-block;
     padding: 0 20px;
+    /* z-index: 1000; */
 }
 
 #nav-header li:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 #nav-header li a:hover{
-    color: rgb(205, 41, 41);
+    color: rgb(38, 31, 182);
 }
 
 #nav-header a{
@@ -75,4 +91,43 @@ h3{
     color: azure;
     text-decoration: none;
 }
+#nav-header li:hover .hijos{
+    display: block;
+    position: absolute;
+    text-align: center;
+    /* z-index: 1000; */
+}
+.submenu .hijos{
+    padding-top: 5pt;
+    font-size: 10pt;
+    display: none;
+    background-color: rgb(29, 173, 125);
+    position: absolute;
+    padding: 20 20px;
+    width: 115pt;
+    background-size: auto;
+    top: 100%;
+    /* z-index: 1000; */
+}
 
+.hijos li{
+    height: 25pt;
+    width: 115pt;
+    padding-top: 5pt;
+    /* box-sizing: border-box; */
+    box-shadow: 2px 2px 5px rgba(35, 71, 71, 0.5);
+    background-color: rgb(29, 173, 125);
+    text-align: center;
+    line-height: 25.3pt;
+    /* border-style: solid;
+    border-top: none;
+    border-color: rgb(35, 71, 71); */
+    /* border-block-width: 5pt;
+    border-radius: 15pt; */
+    /* border-width: 115pt; */
+}
+/*.submenu .hijos li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}*/
