@@ -79,7 +79,8 @@ h3{
     /* z-index: 1000; */
 }
 
-#nav-header li:hover{
+#nav-header li:hover,
+.overlay a:hover{
     transform: scale(1.4);
 }
 #nav-header li a:hover{
@@ -89,8 +90,30 @@ h3{
 #nav-header a{
     font-size: 700;
     color: azure;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
+
+#cabezeraPrincipal .btn button,
+#cabezeraPrincipal .menu button
+{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#cabezeraPrincipal .btn button:hover,
+#cabezeraPrincipal .menu button:hover{
+    background-color: #e2f2f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+
+
 #nav-header li:hover .hijos{
     display: block;
     position: absolute;
@@ -131,3 +154,70 @@ h3{
     overflow: hidden;
     border-bottom: none;
 }*/
+
+.menu{
+    display: none;
+}
+@media screen and (max-width: 800px){
+    #nav-header li, .btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+#cabezeraPrincipal a{
+    text-decoration: none;
+}
+
+#cabezeraPrincipal .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(35, 71, 71, 0.5);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+#cabezeraPrincipal .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cabezeraPrincipal .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s esase 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+#cabezeraPrincipal .overlay a:hover,
+#cabezeraPrincipal .overlay a:focus{
+    color: #ffbc0e;
+}
+#cabezeraPrincipal .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+@media screen and (max-height:450px){
+    #cabezeraPrincipal .overlay a{
+        font-size: 20px;
+    }
+    #cabezeraPrincipal .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
