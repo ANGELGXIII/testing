@@ -52,8 +52,10 @@ h3{
     font-family: 'DM Sans', sans-serif;
     font-size: 14pt;
     background-color: rgb(29, 173, 125);
+    color: #f8e2e2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
     height: 85px;
     padding: 5px 10%;
@@ -97,13 +99,14 @@ h3{
 }
 
 #nav-header a{
-    font-size: 700;
+    font-size: 14pt;
     color: azure;
     /*text-decoration: none;*/
 }
-#btncontact{
-    position: relative;
-    align-self: auto;
+#btncontact, .menu{
+    position: absolute;
+    right: 25px;
+    /* align-self: auto; */
 }
 #cabezeraPrincipal .btn button,
 #cabezeraPrincipal .menu button
@@ -134,7 +137,7 @@ h3{
 }
 .submenu .hijos{
     padding-top: 5pt;
-    font-size: 10pt;
+    font-size: 14pt;
     display: none;
     background-color: rgb(29, 173, 125);
     position: absolute;
@@ -176,8 +179,8 @@ h3{
     }
     .menu{
         display: block;
-        position: relative;
-        align-self: auto;
+        position: absolute;
+        right: 25px;
     }
 }
 
