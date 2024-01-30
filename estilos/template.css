@@ -215,7 +215,8 @@ h3{
         
     }
     #tituloPrincipalmini a{
-        display: inline;
+        display: flex;
+        align-items: center;
         color: black;
         /* position: relative; */
         font-size: 25pt;
@@ -297,8 +298,8 @@ h3{
     background-color: rgb(182, 238, 246);
     /* background-color: red; */
     /* font-size: 14pt; */
-    /* width: fit-content; */
-    /* height: 100px; */
+    width: fit-content;
+    height: fit-content;
     /* position: relative;s */
     text-align: center;
     padding: 15px 15px;
@@ -321,6 +322,8 @@ h3{
 
 .img-container{
     padding: 0px 10px;
+    /* height: fit-content;
+    width: fit-content; */
     
 }
 .img-container:hover{
