@@ -238,7 +238,23 @@ h3{
         border-color: black;
         transition: 1s;
     }
-    
+    .fondo-container .container{
+        display: block;
+        text-align: center;
+        /* padding: 0 10px; */
+        /* align-items: center; */
+        /* padding: 10px 200px; */
+    }
+    .fondo-container .container .img-container{
+        position: relative;
+        align-content: center;
+        height: 500px;
+        width: 410px;
+        margin: 0px 0px;
+        margin-top: 10px;
+        /* background-color: #e2f2f8; */
+        margin-right: 0px;
+    }
 }
 
 #cabezeraPrincipal a{
@@ -295,6 +311,21 @@ h3{
 }
 /* Los container*/
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* Ajustar el alto según sea necesario */
+    height: fit-content; 
+    /* width: fit-content; */
+    /* margin: 10px 10px;*/
+    padding: 10px 10px;
+    /* margin: 0 0; */
+    background-color: cadetblue;
+    /* position: relative;
+    top: 50px; */
+}
+.textbox-container{
     background-color: rgb(182, 238, 246);
     /* background-color: red; */
     /* font-size: 14pt; */
@@ -304,24 +335,15 @@ h3{
     text-align: center;
     padding: 15px 15px;
     margin: 0px 0px ;
-}
-
-.fondo-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content; /* Ajustar el alto según sea necesario */
-    width: fit-content;
-    /* margin: 10px 10px;*/
-    padding: 10px 0px;
-    /* margin: 0 0; */
-    background-color: cadetblue;
-    position: relative;
-    top: 50px;
+    
 }
 
 .img-container{
-    padding: 0px 10px;
+    /* position: relative;
+    text-align: center; */
+    /* background-color: #e2f2f8; */
+    padding: 20px 20px;
+    /* margin: 0 0; */
     /* height: fit-content;
     width: fit-content; */
     
@@ -332,19 +354,24 @@ h3{
     
 }
 
-#padre h2{
+.fondo-container h2{
     position: relative;
     /* top: 20px; */
-    margin: auto 0;
+    margin: auto 0px;
+/* UP - RIGHT - DOWN - LEFT */
+    padding: 10px 0px 20px 0px;
 }
-#padre{
-    /* background-color: #ffbc0e; */
+.fondo-container{
+    border-radius: 15px;
+    background-color: cadetblue;
     /* text-align: center; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    padding: 50px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 25px 0px;
     /* background-color: yellowgreen; */
     /* vertical-align: middle; */
     display: block;
-    /* height: auto; */
+    height: auto;
+    width: auto;
 }
