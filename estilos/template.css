@@ -245,16 +245,16 @@ h3{
         /* align-items: center; */
         /* padding: 10px 200px; */
     }
-    .fondo-container .container .img-container{
-        position: relative;
-        align-content: center;
-        height: 500px;
-        width: 410px;
-        margin: 0px 0px;
-        margin-top: 10px;
+    /* .fondo-container .container .img-container{ */
+        /* position: relative; */
+        /* align-content: center; */
+        /* height: 500px; */
+        /* width: 350px; */
+        /* margin: 0px 0px; */
+        /* margin-top: 10px; */
         /* background-color: #e2f2f8; */
-        margin-right: 0px;
-    }
+        /* margin-right: 0px; */
+    /* } */
 }
 
 #cabezeraPrincipal a{
@@ -338,17 +338,18 @@ h3{
     
 }
 
-.img-container{
+.container .img-container img{
     /* position: relative;
     text-align: center; */
     /* background-color: #e2f2f8; */
-    padding: 20px 20px;
-    /* margin: 0 0; */
+    padding: 15px 15px;
+    /* margin-top: 20px; */
+    /* margin: 10px 10px; */
     /* height: fit-content;
     width: fit-content; */
     
 }
-.img-container:hover{
+.fondo-container .container .img-container img:hover{
     transform: scale(1.01);
     transition: 1s;
     
